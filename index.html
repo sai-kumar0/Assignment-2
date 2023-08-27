@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!----Required Meta Tags------>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Sai kumar">
+    <meta name="description" content="AI-Gift shop">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---------Internal Css-------->
+    
+    <link rel="stylesheet" href="main.css">
+    
+    <!--------Font awesome------->
+    
+    <script src="https://kit.fontawesome.com/efdffb124b.js" crossorigin="anonymous"></script>
+    
+    <!------Bootstrap Css---------->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+    <!-------Google font links--------->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=EB+Garamond&family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- --------Fav icon--------------->
+
+    <title>Gift Perfect</title>
+    <link rel="icon" href="./Imgs/hello gift.png" type="image/icon type">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+<body>
+
+    <!-- -------------------Header------------------- -->
+    
+    <header>
+
+        <!-- ----------Nav bar----------->
+
+        <nav class="navbar navbar-expand-lg">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand logo" href="#">
+                    <img src="./Imgs/hello gift.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-center">
+                    Gift<span>Perfect</span>
+                </a>
+                
+                <button class="navbar-toggler toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered" style="color: #000000;"></i>
+                </button>
+
+                <div class="collapse navbar-collapse nav-items" id="navbarSupportedContent">
+
+                    <!-- -------Nav items-------- -->
+
+                    <ul class="navbar-nav ms-auto text-center mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Explore</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#shop">Shop</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span class="material-symbols-outlined">shopping_bag</span></a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link span" href="#">Login</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+        
+    </header>
+
+    <!-- ------------------Main------------------ -->
+
+    <main>
+
+        <section class="explore container-fluid" id="explore">
+
+            <div class="text-content">
+
+                <h1>Gifts That Truly Matter</h1>
+                <h3>Because Every Gift Should Tell a Story</h3>
+                <p class="mt-sm-4">"Wondering how to surprise your loved ones with a thoughtful present? Explore our curated gift recommendations and make
+                every occasion memorable."</p>
+
+                <button class="btn btn-primary">Explore</button>
+            </div>
+
+        </section>
+
+        <section class="input-handler container-fluid">
+
+            <!-- ----------Image and Quote--------- -->
+
+            <div class="content col-md-5">
+                <img class="img-fluid" src="./Imgs/christmas-2947257_1280.jpg" alt="Christmas Gifts" width="400" height="400">
+                <p class="quote">“Gifts may be big or small. What makes them special is the love you put into giving them.”</p>
+                <p class="author">-Ralph Waldo Emerson</p>
+            </div>
+
+            <!-- -------Input form---------- -->
+
+            <div class="form-handler col-md-5">
+                <p class="title">Find your Gift Inspiration</p>
+                <form id="giftform">
+                    <div class="mb-1">
+                        <label for="relation" class="form-label">Relationship</label>
+                        <input type="text" class="form-control" id="relation" placeholder="ex :Brother, Love" required>
+                    </div>
+
+                    <div class="mb-1">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="number" class="form-control" id="age" placeholder="ex :25, 35" required>
+                    </div>
+
+                    <div class="mb-1">
+                        <label for="occassion" class="form-label">Occassion</label>
+                        <input type="text" class="form-control" id="occassion" placeholder="ex :Birthday, Marriage" required>
+                    </div>
+
+                    <div class="mb-1">
+                        <label for="interest" class="form-label">Interest</label>
+                        <input type="text" class="form-control" id="interest" placeholder="ex :Gaming, Singing" required>
+                    </div>
+
+                    <div class="mb-1">
+                        <label for="budget" class="form-label">Budget</label>
+                        <input type="number" class="form-control" id="budget" placeholder="ex :5000, 10000" required>
+                    </div>
+
+                    <div class="mt-4 float-end col-12">
+                        <button type="submit" class="btn btn-primary mb-3 col-12">Find Gift</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <section class="d-flex justify-content-center m-4">
+            <div id="recommendations"></div>
+        </section>
+
+        <section class="container-fluid shop" id="shop">
+
+            <!-- ---------Shopping Collections------- -->
+
+            <p class="title">Popular <span>Gift</span> Collection</p>
+
+            <div class="items d-flex flex-row justify-content-around flex-wrap">
+
+                <div class="card" style="width: 23rem;">
+
+                    <img src="./Imgs/necklace-2149668_1280.jpg" class="card-img-top" alt="">
+                    <div class="card-body d-flex flex-row justify-content-between">
+                        <p class="name">Heart Necklace</p>
+                        <p class="price">$ 17.50</p>
+                    </div>
+                    <div class="card-footer text-center">
+                    Gift Now
+                    </div>
+
+                </div>
+
+                <div class="card" style="width: 23rem;">
+
+                    <img src="./Imgs/teddy-bear-3599680_1280.jpg" class="card-img-top" alt="">
+                    <div class="card-body d-flex flex-row justify-content-between">
+                        <p class="name">Teddy bear</p>
+                        <p class="price">$ 17.50</p>
+                    </div>
+                    <div class="card-footer text-center">
+                    Gift Now
+                    </div>
+
+                </div>
+
+                <div class="card" style="width: 23rem;">
+
+                    <img src="./Imgs/virtual-3460451_1280.jpg" class="card-img-top" alt="">
+                    <div class="card-body d-flex flex-row justify-content-between">
+                        <p class="name">Virtual Reality box</p>
+                        <p class="price">$ 17.50</p>
+                    </div>
+                    <div class="card-footer text-center">
+                    Gift Now
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </section>
+
+    </main>
+
+    <!-- ---------------Footer-------------------- -->
+
+    <footer class="container-fluid" id="contact">
+
+        <!-- ----Logo---------- -->
+
+        <div class="contact">
+            <p class="logo">
+                <img src="./Imgs/hello gift.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-center mb-3">
+                Gift<span>Perfect</span>
+            </p>
+            <p style="cursor: pointer;"><i class="fa-solid fa-paper-plane me-2"></i>saichary934@gmail.com</p>
+            <p style="cursor: pointer;"><i class="fa-solid fa-phone me-2"></i>+91 9347266424</p>
+        </div>
+
+        <!-- ----------Other Links-------- -->
+
+        <div style="cursor: pointer;">
+            <p>About</p>
+            <p>Products</p>
+            <p>Privacy policy</p>
+            <p>Terms & Conditions</p>
+        </div>
+
+        <!-- ----Social media links------- -->
+
+        <div class="contact-links">
+            <p>Follow us :</p>
+            <div class="d-flex justify-content-around mt-3">
+                <a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-------------Internal Javascript------------------>
+
+    <script src="app.js"></script>
+
+    <!-----------Bootstrap Javascript---------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
